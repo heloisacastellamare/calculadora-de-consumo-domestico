@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/calculadora.png.png"">
+  <title>Calculadora de Consumo Doméstico</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="tituloFundo"><h1>Calculadora de Consumo Doméstico</h1></div>
+      <h5>Insira abaixo quanto tempo você gasta em cada eletrodoméstico por dia:</h5>
+
+    <div class="eletrodoméstico">
+
+    <div id="fundo">
+      <label for="chuveiro">Chuveiro Eletrico</label>
+      <input type="number" id="chuveiro" min="0" max="100"/> <p>minutos</p>
+    </div>
+
+    <div id="fundo">
+      <label for="maquina-de-lavar">Maquina de Lavar</label>
+      <input type="number" id="maquina" min="0" max="100"/><p>horas</p>
+    </div>
+
+    <div id="fundo">
+      <label for="ferro-de-passar">Ferro de Passar</label>
+      <input type="number" id="ferro" min="0" max="100"/>
+      <p>minutos</p>
+</div>
+    </div>
+    <button onclick="calcularConsumo()">Calcular Consumo</button>
+
+    </header>
+
+    <header class="resultadoConsumo">
+      <p>Veja aqui o seu consumo diário utilizando os equipamentos citados acima:</p>
+        <h3 id="resultado"></h3>
+    </header>
+
+    <header class="resultadoMensal" id="resultadoMensal">
+      <p>Veja aqui o seu consumo mensal utilizando os equipamentos citados acima:</p>
+        <h3 id="resulMensal"></h3>
+    </header>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

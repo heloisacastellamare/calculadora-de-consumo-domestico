@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #21274d;
+}
+
+header{
+  background-color: #3d3c6d;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 45px;
+  text-align: center;
+}
+
+.tituloFundo{
+  border-radius: 20px;
+  background-color: #e4e4ef;
+  padding: 10px;
+  max-width: 600px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1{
+  color: #9d51ff;
+  text-align: center;
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff,
+2px -2px 0 #fff, -2px 2px 0 #fff;
+}
+
+h5{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+input[type="range"] {
+  height: 15px;
+  border-radius: 5px;
+  outline: none;
+  color: #9d51ff;
+}
+
+#informeConsumo{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+#valorAgua, #valorEnergia{
+  border-radius: 40px;
+  background-color: #e4e4ef;
+  color: #9d51ff;
+  padding: 10px;
+  max-width: 600px;
+  align-items: center;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: space-around;
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff,
+2px -2px 0 #fff, -2px 2px 0 #fff;
+}
+
+.eletrodoméstico{
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: normal;
+  gap: 20px;
+}
+
+#fundo{
+  background-color: #5c5b88;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+input[type="number"]{
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  border: #9d51ff solid 2px;
+  font-family: "Coiny", system-ui;
+}
+
+button{
+  color: #9d51ff;
+  background-color: #e4e4ef;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Coiny", system-ui;
+}
+
+.resultadoConsumo, .resultadoMensal{
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+h3{
+  color: #9d51ff;
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff,
+2px -2px 0 #fff, -2px 2px 0 #fff;
+}
+
+@media (max-width: 800px) {
+  header{
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .eletrodoméstico{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  #valorAgua, #valorEnergia{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+}
